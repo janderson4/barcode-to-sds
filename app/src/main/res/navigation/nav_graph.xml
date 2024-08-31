@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.main_activity.activity_controls.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_LibraryFragment"
+            app:destination="@id/Library2Fragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_SuccessFragment"
+            app:destination="@id/SuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.main_activity.activity_controls.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SuccessFragment"
+            app:destination="@id/SuccessFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_FailureFragment"
+            app:destination="@id/FailureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SuccessFragment"
+        android:name="com.example.main_activity.activity_controls.Success"
+        android:label="@string/success_fragment_label"
+        tools:layout="@layout/success">
+
+        <action
+            android:id="@+id/action_SuccessFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/FailureFragment"
+        android:name="com.example.main_activity.backend.Failure"
+        android:label="@string/failure_fragment_label"
+        tools:layout="@layout/failure">
+
+        <action
+            android:id="@+id/action_FailureFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Library2Fragment"
+        android:name="com.example.main_activity.activity_controls.Library2"
+        android:label="@string/library_fragment_label"
+        tools:layout="@layout/library2">
+
+        <action
+            android:id="@+id/action_LibraryFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_LibraryFragment_to_LibraryPdfFragment"
+            app:destination="@id/LibraryPdfFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/LibraryPdfFragment"
+        android:name="com.example.main_activity.activity_controls.LibraryPdf"
+        android:label="@string/library_pdf_fragment_label"
+        tools:layout="@layout/library_pdf">
+
+        <action
+            android:id="@+id/action_LibraryPdfFragment_to_Library2Fragment"
+            app:destination="@id/Library2Fragment" />
+    </fragment>
+</navigation>

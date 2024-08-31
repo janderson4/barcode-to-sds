@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BasicActivity</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="success_fragment_label">Success Fragment</string>
+    <string name="failure_fragment_label">Failure Fragment</string>
+    <string name="library_fragment_label">Library Fragment</string>
+    <string name="scan">scan barcode</string>
+    <string name="previous">Previous</string>
+    <string name="library_pdf_fragment_label">Library Pdf Fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="scan_message">Use this device to scan a product barcode and automatically find an SDS.
+        Before using the app please review the End User License Agreement found at
+        http://barcodetosds.com.s3-website.us-east-2.amazonaws.com/</string>
+</resources>
